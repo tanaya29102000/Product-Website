@@ -83,7 +83,7 @@ h1 {
 
 .cart-item i {
   cursor: pointer;
-  color: #e74c3c;
+  /* color: #e74c3c; */
   font-size: 18px;
   margin-left: auto;
   transition: color 0.3s;
@@ -108,7 +108,7 @@ h1 {
   font-size: 24px;
 }
 
-.button1 {
+.button {
   padding: 10px 20px;
   font-size: 16px;
   color: #fff;
@@ -116,15 +116,16 @@ h1 {
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s;
+  
   /* margin-left: 100px;
   margin-right: 800px; */
 }
 
-.button1:hover {
+.button:hover {
   background-color: #2980b9;
 }
 
-.button1:disabled {
+.button:disabled {
   background-color: #bdc3c7;
   /* background-color: ; */
   cursor: not-allowed;

@@ -18,7 +18,7 @@ html, body {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #f4f4f4; /* Adjust as needed */
+  /* background-color: #5d1313; Adjust as needed */
 }
 
 .navbar-image img {
@@ -35,6 +35,8 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url('/public/images\ \(2\).jpg'); 
+
 }
 
 .text-content {
@@ -66,5 +68,14 @@ html, body {
 .footer {
   padding: 20px;
   text-align: center;
-  background-color: #f4f4f4; /* Adjust as needed */
+  background-color: #259294; /* Dark background for the navbar */
+  
+}
+
+.p{
+  background-color: aliceblue;
+}
+
+.navbar-title{
+  align-items: center;
 }

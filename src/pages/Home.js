@@ -4,19 +4,19 @@ import './Home.css';
 function Home() {
   return (
     <div className="home-container">
-      <header className="navbar">
+      {/* <header className="navbar">
         <h1 className="navbar-title">Ajio - Shop the Best Fashion</h1>
         <div className="navbar-image">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz3uC5ot0uMZYuDZz2wn5VozC-PYDl6UL6yA&usqp=CAU" alt="Ajio Fashion" />
         </div>
-      </header>
+      </header> */}
 
-      <div className="main-content">
+      {/* <div className="main-content">
         <div className="text-content">
           <h2>Welcome to Ajio</h2>
         </div>
         <div className="background-image"></div>
-      </div>
+      </div> */}
 
       <div className="services-section">
         <h2 className="services-title">Our Services</h2>

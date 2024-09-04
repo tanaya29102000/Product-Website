@@ -42,7 +42,9 @@ function Cart() {
         <div className="foot">
           <h3 style={{ marginRight: '20px' }}>Total</h3>
           <h2 id="total">${total.toFixed(2)}</h2>
-          <button1 onClick={handleClearCart}>Clear Cart</button1>
+          <div>
+          <button onClick={handleClearCart}>Clear Cart</button>
+          </div>
         </div>
       </main>
   );

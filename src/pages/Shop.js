@@ -120,10 +120,11 @@ function Shop() {
 
   return (
     <div className="shop-container">
-      <h1>Shop</h1>
-      <div className="navbar">
         <h2 onClick={handleNavigateToCart} style={{ cursor: 'pointer' }}>Cart ({cart.length})</h2>
-      </div>
+      <h1>Shop</h1>
+      {/* <div className="navbar">
+        <h2 onClick={handleNavigateToCart} style={{ cursor: 'pointer' }}>Cart ({cart.length})</h2>
+      </div> */}
       <div className="products">
         {products.map(product => (
           <div key={product.id} className="product">

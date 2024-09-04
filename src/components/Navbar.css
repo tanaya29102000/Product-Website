@@ -1,90 +1,76 @@
-/* Navbar.css */
-
-/* Container for the entire navbar */
-.navbar {
-  background: linear-gradient(45deg, #fcb045, #fd1d1d, #833ab4); /* Multi-color gradient */
-  padding: 1rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  position: relative;
-}
-
-/* Specific styling for the top section of the navbar */
-.navbar-top {
-  background: radial-gradient(circle, #ff0099, #493240); /* Radial gradient from pink to dark */
-  padding: 1rem;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.navbar-list {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-around;
-  margin: 0;
+/* Basic reset for list and link styles */
+.navbar ul {
+  list-style: none;
   padding: 0;
-}
-
-.navbar-list li {
   margin: 0;
 }
 
-.navbar-list li a {
-  color: white;
+.navbar a {
   text-decoration: none;
-  padding: 12px 24px;
-  font-size: 16px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  border-radius: 20px;
-  font-weight: 500;
-  display: inline-block;
+  color: #fff;
 }
 
-.navbar-list li a:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  transform: scale(1.1);
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #259294; /* Dark background for the navbar */
+  padding: 1rem 2rem; /* Padding for spacing */
 }
 
-.navbar-list li a:active {
-  background-color: rgba(255, 255, 255, 0.2);
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff; /* Logo text color */
 }
 
-.navbar-list li a:focus {
-  outline: none;
-  background-color: rgba(255, 255, 255, 0.15);
+/* Styling for navigation links */
+.nav-links ul {
+  display: flex;
+  gap: 1rem; /* Space between items */
 }
 
-/* Responsive design for mobile screens */
+.nav-links a {
+  color: #fff; /* Text color */
+  font-size: 1rem;
+  padding: 0.5rem 1rem; /* Padding for links */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for links */
+.nav-links a:hover {
+  background-color: #575757; /* Slightly lighter background on hover */
+  color: #fff; /* Text color on hover */
+  border-radius: 5px; /* Rounded corners for the hover effect */
+}
+
+/* Styling for the cart icon */
+.nav-links img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Responsive styling */
 @media (max-width: 768px) {
   .navbar {
-    padding: 0.5rem; /* Adjust padding for smaller screens */
-  }
-
-  .navbar-top {
-    padding: 0.5rem; /* Adjust padding for smaller screens */
-  }
-
-  .navbar-list {
     flex-direction: column;
-    align-items: center;
-    padding: 0; /* Remove padding */
+    align-items: flex-start;
   }
 
-  .navbar-list li {
-    margin-bottom: 10px;
-  }
-
-  .navbar-list li a {
-    padding: 10px 20px;
+  .nav-links ul {
+    flex-direction: column;
     width: 100%;
-    text-align: center;
   }
-}
 
-/* Additional responsiveness for very small screens */
-@media (max-width: 480px) {
-  .navbar-list li a {
-    font-size: 14px; /* Adjust font size */
-    padding: 8px 16px; /* Adjust padding */
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links a {
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    display: block;
   }
 }

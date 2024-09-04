@@ -1,0 +1,90 @@
+/* Navbar.css */
+
+/* Container for the entire navbar */
+.navbar {
+  background: linear-gradient(45deg, #fcb045, #fd1d1d, #833ab4); /* Multi-color gradient */
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  position: relative;
+}
+
+/* Specific styling for the top section of the navbar */
+.navbar-top {
+  background: radial-gradient(circle, #ff0099, #493240); /* Radial gradient from pink to dark */
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.navbar-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-list li {
+  margin: 0;
+}
+
+.navbar-list li a {
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 20px;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.navbar-list li a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.1);
+}
+
+.navbar-list li a:active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.navbar-list li a:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Responsive design for mobile screens */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.5rem; /* Adjust padding for smaller screens */
+  }
+
+  .navbar-top {
+    padding: 0.5rem; /* Adjust padding for smaller screens */
+  }
+
+  .navbar-list {
+    flex-direction: column;
+    align-items: center;
+    padding: 0; /* Remove padding */
+  }
+
+  .navbar-list li {
+    margin-bottom: 10px;
+  }
+
+  .navbar-list li a {
+    padding: 10px 20px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Additional responsiveness for very small screens */
+@media (max-width: 480px) {
+  .navbar-list li a {
+    font-size: 14px; /* Adjust font size */
+    padding: 8px 16px; /* Adjust padding */
+  }
+}
